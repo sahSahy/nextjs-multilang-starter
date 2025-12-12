@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root {
+  --background: white;
+  --foreground: black;
+  --border-orange: orange;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  /* font-family: "Lora", serif; */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+a {
+  font-family: "Lora", serif;
+}
+/* p,
+li,
+span,
+div {
+  font-family: "Lora", sans-serif;
+} */
+img {
+  height: 100%;
+}
+
+.border-\[var\(--border-orange\)\] {
+  border-color: var(--border-orange);
+}
+.text-\[var\(--background\)\] {
+  color: var(--background);
+}
